@@ -1,0 +1,675 @@
+html, *{
+ 
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    background-color: whitesmoke;
+}
+h1{
+    color: #4174ff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin: 20px;
+}
+h2{
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-right: 20px;
+   
+    
+}
+
+.mprincipal{
+    
+    background-color: #4174ff;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    border-bottom: solid 1px blue;
+    display: none;
+    align-items: center;
+    justify-content: right;
+    
+    
+  
+}
+
+.menu {
+    display: flex;
+    margin-right: 30px;
+    
+  
+    
+    
+}
+
+.mprincipal ul li{
+    list-style: none;
+    margin: 0 10px;
+    
+}
+.mprincipal ul li a{
+    text-decoration: none;
+    color: white;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+    
+  
+    
+}
+.mprincipal ul li:hover, li :active {
+    background-color: rgb(46, 92, 107);
+    transition: 0;
+}
+ul.show{
+    top: 65px;
+}
+
+/*Start submenu Logo*/
+.submenu{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(46, 92, 107);
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logotel{
+    width: 30px;
+    height: 30px;
+
+
+  
+}
+.telefono{
+    font-size: 15px;
+    margin-right: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+.containertel{
+display: none;
+align-items: center;
+}
+.iconohamburguesa{
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menuresponsive{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: #4174ff;
+
+}
+.enlacesmoviles >li{
+   list-style: none;
+   text-align: center;
+   padding: 10px;
+   
+   
+
+}
+.enlacesmoviles >li >a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+    
+}
+
+.logo{
+    width: 100px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+/*End Submenu Logo*/
+/*Start style image logo*/
+
+
+
+/*Start Main image*/
+
+.contenedor1{
+    background-color: whitesmoke;
+    height: 100vh;
+    background-image: url(image/gamer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  
+}
+
+.contenedor1 span{
+   
+    
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    
+ 
+}
+
+.mainimg {
+    
+    height: 100vh;
+}
+
+
+
+/*End Main Image*/
+
+/*Start Servicios*/
+#servicio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteinerfibra{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;   
+    min-height: 100vh;
+    padding: 50px;
+}
+
+
+.fibra{
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    margin: 20px;
+    
+    
+}
+.fibra img{
+    
+   z-index: -100;
+   position: relative;
+   size: 100%;
+   width: inherit;
+   border-radius: 10px;
+
+}
+.containerimage{
+  
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 450px;
+    
+    
+}
+.texto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    margin: 10px;
+    padding: 3rem;
+    max-width: 650px;
+    
+}
+.fibra h3{
+    color: #4174ff;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+.fibra p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    
+    
+
+}
+/*End Servicios*/
+
+
+/* Start Planes */
+.planes{
+   min-height: 100vh;
+}
+.contenedor-planes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+   
+   
+}
+.planes ul li{
+
+    list-style: none;
+    font-size: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 20px 35px 10px 0;
+   
+    
+    
+
+}
+
+.planes ul li a{
+    font-size: auto;
+    text-decoration: none;
+    border: solid 1px orange;
+    border-radius: 10px;
+    color: white;
+    background-color: orange;
+    padding: 14px 40px;
+    
+    
+    
+
+}
+.planes ul li a:hover{
+    background-color: chocolate;
+}
+
+.plansection{
+   
+    background: #fff;
+    padding: 15px 0 15px 0;
+    margin: 10px;
+    list-style: none;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    
+}
+#velocidad25{
+   
+        font-family: 'Kanit', sans-serif;
+        font-size: 40px;    
+        font-weight: bold;
+        color: #4174ff;
+        
+   
+}
+#velocidad50{
+   
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;    
+    font-weight: bold;
+    color: #4174ff;
+    
+
+}
+#velocidad100{
+   
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;    
+    font-weight: bold;
+    color: #4174ff;
+    
+
+}
+#precios{
+    
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}
+/* End Planes */
+
+.cobertura {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+
+}
+
+.cobertura div img{
+    
+    height: 300px;
+    margin-left: 10px;
+    border: solid 1px black;
+    border-radius: 20px;
+
+    
+}
+.cobertura div p{
+    font-size: 30px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+/*End Servicios*/
+
+/* Start contacto */
+
+#contact{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    
+   
+    
+    
+}
+.formatoform {
+    width: 30rem;
+    font-size: 20px;
+}
+.formulario{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+
+
+    
+
+}
+.cajadire{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.cajadire span{
+    color: #4174ff;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.cajadire address{
+    font-size: 20px;
+    
+}
+.cajadire p{
+    font-size: 20px;
+    margin: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-enviar{
+    width: 10rem;
+    height: 2rem;
+    color: white;
+    border: solid 1px #4cae4c;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    font-size: 20px;
+    cursor: pointer;
+    
+    
+    
+}
+.btn-enviar:hover{
+    background-color: rgb(111, 165, 31);
+}
+.ubicacion{
+    display: flex;
+    align-items: center;
+   
+}
+/* End Contacto */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #4174ff;
+    height: 3rem;
+    
+
+
+}
+.footer span{
+    font-family: 'Open Sans', sans-serif;;
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 15px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+        h1{
+    
+        font-size: 25px;
+        
+    }
+    h2{
+        
+        font-size: 15px;
+     
+       
+        
+    }
+    
+    .menu {
+        
+        display: flex;
+        flex-direction: column;
+        margin-right: 5px;
+        
+      
+        
+        
+    }
+    
+    .mprincipal ul li{
+        font-size: auto;
+        list-style: none;
+        margin: 0 10px;
+        
+    }
+    .mprincipal ul li a:hover{
+        text-decoration: none;
+        color: white;
+        
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    
+        
+      
+        
+    }
+    .mprincipal ul li:hover, li :active {
+        background-color: rgb(46, 92, 107);
+        transition: 0;
+    }
+    .conteinerfibra{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .containerimage{
+        width: 100%;
+       
+            
+    }
+    .logotel{
+        width: 20px;
+        height: 20px;
+    
+    
+      
+    }
+    .telefono{
+        font-size: 15px;
+        margin-right: 10px;
+       
+    }
+   
+    
+    .logo{
+        width: 70px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+.contenedor1 span{
+   
+    
+        font-size: 25px;
+      
+        
+     
+    }
+/*Start Servicios*/
+
+
+
+
+.fibra{
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+
+
+.texto{
+    
+    text-align: center;
+}
+.fibra h3{
+
+    font-size: 20px;
+ 
+  
+
+}
+.fibra p{
+    
+    font-size: 18px;
+    
+    
+
+}
+/*End Servicios*/
+/* START COBERTURA */
+
+.cobertura{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cobertura div img{
+    width: 100%;
+}
+.cobertura div p{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* END COBERTURA */
+
+#contact{
+
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+    
+   
+    
+    
+}
+.formatoform {
+    width: 20rem;
+    font-size: 15px;
+    margin-left: 5px;
+   
+}
+
+.cajadire span{
+   
+    font-size: 20px;
+    text-align: center;
+}
+.cajadire address{
+    font-size: 15px;
+    
+}
+.cajadire p{
+    font-size: 15px;
+
+}
+
+.btn-enviar:hover{
+    background-color: rgb(111, 165, 31);
+}
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.mprincipal {
+    display: flex;
+}
+.containertel {
+    display: flex;
+}
+.navmobil{
+    display: none;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
