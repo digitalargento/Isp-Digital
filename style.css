@@ -116,6 +116,7 @@ align-items: center;
 
 .menuresponsive{
    
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -178,6 +179,7 @@ align-items: center;
     font-weight: bold;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
+    text-shadow: 2px 2px 5px blue;
     
  
 }
@@ -666,7 +668,10 @@ align-items: center;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+.iconohamburguesa{
+    display: none;
+    
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
