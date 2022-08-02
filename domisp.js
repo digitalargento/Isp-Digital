@@ -1,22 +1,32 @@
 const hmenu= document.querySelector(`#hamburguesamenu`);
 const menuresponsive= document.querySelector(`.menuresponsive`)
 const iconoX= document.querySelector(`#iconoX`)
-hmenu.addEventListener("click",()=>{
+
+ hmenu.addEventListener("click",()=>{
     displayresponsive()
 
 })
-iconoX.addEventListener("click", ()=>{
-    ocultarmenu()
-})
+ iconoX.addEventListener("click", ()=>{
+     ocultarmenu()
+ })
 function displayresponsive(){
     
-        menuresponsive.style.display="block"
+         menuresponsive.classList.add("menuresponsive-open")
         console.log("llego al final")
     
     
 }
-function ocultarmenu (){
-    menuresponsive.style.display="none"
-    console.log("Aprete la X")
-}
+ function ocultarmenu (){
+    menuresponsive.classList.remove("menuresponsive-open")
+     console.log("Aprete la X")
+ }
+ const enlaces = document.querySelector(".enlacesmoviles");
 
+enlaces.addEventListener("click" , (e) => {
+    
+     if ( e.target.className === "menu-a"){
+       ocultarmenu();
+     }
+ })
+
+    

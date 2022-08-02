@@ -68,6 +68,7 @@ h2{
 .mprincipal ul li:hover, li :active {
     background-color: rgb(46, 92, 107);
     transition: 0;
+    
 }
 ul.show{
     top: 65px;
@@ -103,8 +104,8 @@ ul.show{
     letter-spacing: 5px;
 }
 .containertel{
-display: none;
-align-items: center;
+    display: none;
+    align-items: center;
 }
 .iconohamburguesa{
     font-size: 25px;
@@ -116,14 +117,18 @@ align-items: center;
 
 .menuresponsive{
    
-    display: none;
+    
     position: absolute;
-    top: 0;
+    top: -50vh;
     left: 0;
     width: 100%;
     height: 50vh;
     background-color: #4174ff;
+    transition: all 0.4s ease-in-out;
 
+}
+.menuresponsive-open{
+    top: 0;
 }
 .enlacesmoviles >li{
    list-style: none;
@@ -250,6 +255,7 @@ align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-bottom: 1rem;
+    
 
 }
 .fibra p{
@@ -259,6 +265,11 @@ align-items: center;
     
 
 }
+
+#iddedicadoResponsive{
+    display: none;
+}
+
 /*End Servicios*/
 
 
@@ -469,7 +480,24 @@ align-items: center;
     margin-right: 1rem;
     font-size: 15px;
 }
-/* Extra small devices (phones, 600px and down) */
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:rgba(27, 187, 12, 0.842);
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+/* Extra small devices (phones, 600px and down)=========================================== */
 @media only screen and (max-width: 800px) {
         h1{
     
@@ -479,11 +507,11 @@ align-items: center;
     h2{
         
         font-size: 15px;
-     
+        
        
         
     }
-    
+   
     .menu {
         
         display: flex;
@@ -568,9 +596,14 @@ align-items: center;
 
 
 .texto{
-    
+    display: block;
+    text-align: center;
+    text-align: justify;
+}
+.texto h3{
     text-align: center;
 }
+
 .fibra h3{
 
     font-size: 20px;
@@ -584,6 +617,12 @@ align-items: center;
     
     
 
+}
+#iddedicado{
+    display: none;
+}
+#iddedicadoResponsive{
+    display: block;
 }
 /*End Servicios*/
 /* START COBERTURA */
