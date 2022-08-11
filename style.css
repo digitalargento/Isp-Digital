@@ -372,7 +372,7 @@ ul.show{
 .cobertura div img{
     
     height: 300px;
-    margin-left: 10px;
+    max-width: 100%;
     border: solid 1px black;
     border-radius: 20px;
 
@@ -432,6 +432,7 @@ ul.show{
     font-weight: bold;
     margin-bottom: 2rem;
 }
+
 .cajadire address{
     font-size: 20px;
     
@@ -460,6 +461,7 @@ ul.show{
 .ubicacion{
     display: flex;
     align-items: center;
+    max-width: 100vw;
    
 }
 /* End Contacto */
@@ -544,6 +546,31 @@ ul.show{
         background-color: rgb(46, 92, 107);
         transition: 0;
     }
+    .conteinerfibra{
+    
+        padding: 5px;
+    }
+    
+    
+    .fibra{
+     
+        margin: 10px;
+        
+        
+    }
+  
+    .containerimage{
+    
+        width: 460px;     
+        
+    }
+
+    .texto{
+    
+        padding: 0.5rem;
+ 
+    }
+
     .conteinerfibra{
         display: flex;
         flex-direction: column;
@@ -653,12 +680,10 @@ ul.show{
     
     
 }
-.formatoform {
-    width: 20rem;
-    font-size: 15px;
-    margin-left: 5px;
-   
-}
+.formulario{
+
+    margin-left: 0;
+ }
 
 .cajadire span{
    
@@ -671,7 +696,15 @@ ul.show{
 }
 .cajadire p{
     font-size: 15px;
-
+    margin: 3px;
+}
+.formatoform {
+    width: 100vw;
+    font-size: 15px;
+   
+}
+input{
+    width: 100%;
 }
 
 .btn-enviar:hover{
