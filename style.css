@@ -558,20 +558,20 @@ ul.show{
     }
     .conteinerfibra{
     
-        padding: 5px;
+        padding: 0px;
     }
     
     
     .fibra{
      
-        margin: 0;
+        margin: 5px;
         
         
     }
   
     .containerimage{
     
-        width: 460px;     
+        width: 100vw;     
         
     }
 
