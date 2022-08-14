@@ -733,9 +733,14 @@ ul.show{
 }
 .ubicacion{
     display: flex;
-    width: 100%;
+   
+    align-items: center;
+    width: auto;
     margin-top: 10px;
    
+}
+.ubicacion iframe{
+    width: 50%;
 }
 }
 
