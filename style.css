@@ -512,7 +512,7 @@ ul.show{
     margin-top:13px;
   }
 /* Extra small devices (phones, 600px and down)=========================================== */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
         h1{
     
         font-size: 25px;
@@ -525,7 +525,38 @@ ul.show{
        
         
     }
+    .menuresponsive{
    
+    
+        position: absolute;
+        top: -50vh;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        background-color: #4174ff;
+        transition: all 0.4s ease-in-out;
+    
+    }
+    .menuresponsive-open{
+        top: 0;
+    }
+    .enlacesmoviles >li{
+       list-style: none;
+       text-align: center;
+       padding: 10px;
+       
+       
+    
+    }
+    .enlacesmoviles >li >a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 3px;
+        
+    }
     .menu {
         
         display: flex;
@@ -705,7 +736,7 @@ ul.show{
 
     margin-left: 0;
     justify-content: center;
-    width: auto;
+    width: 95vw;
  }
 
 .cajadire span{
@@ -722,7 +753,7 @@ ul.show{
     margin: 3px;
 }
 .formatoform {
-    width: 100vw;
+    width: 95vw;
     font-size: 15px;
    
 }
@@ -730,6 +761,7 @@ ul.show{
 
 .btn-enviar:hover{
     background-color: rgb(111, 165, 31);
+
 }
 .ubicacion{
     display: flex;
@@ -744,8 +776,9 @@ ul.show{
 }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up)============================================ */
 @media only screen and (min-width: 600px) {
+
 
 }
 
@@ -753,21 +786,25 @@ ul.show{
 @media only screen and (min-width: 768px) {
 
 .mprincipal {
-    display: flex;
+    display: none;
+   
 }
 .containertel {
     display: flex;
 }
 .navmobil{
-    display: none;
+    display: flex;
 }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-.iconohamburguesa{
+/* .iconohamburguesa{
     display: none;
     
+} */
+.mprincipal{
+    display: flex;
 }
 }
 
